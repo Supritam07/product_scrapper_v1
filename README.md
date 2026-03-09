@@ -58,8 +58,20 @@ To build a standalone APK for Android using Expo Application Services (EAS):
    ```
    *Note: `--profile preview` is used to generate an APK (not an AAB for the Play Store).*
 
+## 📱 Latest Build
+The latest Android APK has been successfully built and can be downloaded here:
+**[Download PriceCompare India APK](https://expo.dev/accounts/ashish132435/projects/price-compare-india/builds/aa9d0ea8-ab81-4b7c-ab29-897e70ad51b3)**
+
 ## API Configuration
-Currently, the app uses a mocked service for demonstration. To use a real API:
+The app is currently configured to use the **Real-Time Product Search API** via RapidAPI. 
+
+### Data Source
+- **API**: `real-time-product-search.p.rapidapi.com`
+- **Capabilities**: Fetches real-time pricing and availability from major Indian stores including Amazon and Flipkart.
+
+To modify the API or use your own key:
 1. Open `src/services/productService.js`.
-2. Replace `RAPID_API_KEY` with your actual key.
-3. Uncomment the API call logic and adjust the response mapping to match your chosen API's structure.
+2. Update the `RAPID_API_KEY` constant with your credentials.
+
+---
+*Note: This project was built for educational purposes to demonstrate React Native price comparison capabilities.*
