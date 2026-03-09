@@ -21,7 +21,8 @@ const ResultsScreen = ({ route, navigation }) => {
             const results = await searchProducts(query);
             setProducts(results);
         } catch (err) {
-            setError('Failed to fetch product prices. Please try again.');
+            console.error('Fetch Error:', err);
+            setError(`Failed to fetch product prices: ${err.message || 'Please try again.'}`);
         } finally {
             setLoading(false);
         }
